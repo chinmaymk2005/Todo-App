@@ -1,0 +1,134 @@
+:root{
+    --body-bg-color: #f4f4f9;  
+    --addtodo-btn:  #5cabff;   
+    --btn-seconday:#f8e068;   
+    --btn-active:#4a90e2;   
+    --btn-edit:#ffd700; 
+    --btn-edit-hover: #ffcc00;  
+    --btn-complete:#32cd32;   
+    --btn-complete-hover: #2eb82e;  
+    --btn-delete:#ff6347;   
+    --btn-delete-hover: #ff4500; 
+ 
+}
+
+*{
+    box-sizing: border-box; 
+}
+ 
+body{
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--body-bg-color);  
+    background-image: url('./bg-image.jpg'); 
+    background-size: cover;
+}
+
+#container{
+    max-width: 600px; 
+    background-color: whitesmoke;   
+    margin: 0 auto;  
+    box-shadow:0 0 10px rgba(0, 0, 0,0.1) ;  
+    border-radius: 6px;
+}
+h1{
+    text-align: center; 
+}
+
+#todoInput{
+    width: 65%; 
+    padding: 10px  ; 
+    border: 2px solid #ddd; 
+    margin: 5px; 
+    border-radius: 5px;  
+    position: relative;
+    left: 30px; 
+}
+
+#addTodo{
+    padding: 11px 20px ;  
+    margin: 40px; 
+    background-color: var(--addtodo-btn);  
+    border: none; 
+    border-radius: 5px;  
+    color: white; 
+    cursor: pointer; 
+} 
+  
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+li{
+    padding: 10px; 
+    border-bottom: 1px solid #ddd;  
+}
+li:last-child{
+    border-bottom: none;  
+}
+li:hover{
+    background-color: aliceblue;
+} 
+
+.edit-input {
+    font-size: 18px;  
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    width: calc(100% - 12px); /* Adjust width to fit within the list item */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+} 
+
+ 
+.filter-btn , .editBtn, .deleteBtn, .completedBtn{ 
+    margin: 5px;  
+    margin-bottom: 15px; 
+    padding: 10px 15px;    
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    background-color: var(--btn-seconday); 
+    transition: background-color 0.5s ease-in-out ;      
+}  
+
+.editBtn{
+    background-color: var(--btn-edit); 
+}
+
+.deleteBtn{
+    background-color: var(--btn-delete); 
+}
+
+.completedBtn{ 
+    background-color: var(--btn-complete); 
+} 
+ 
+.editBtn:hover{
+    background-color: var(--btn-edit-hover);  
+}
+
+.deleteBtn:hover{
+    background-color: var(--btn-delete-hover); 
+}
+
+.completedBtn:hover{
+    background-color: var(--btn-complete-hover);  
+}
+  
+.filter-btn:hover{     
+    background-color: var(--btn-active); 
+}
+
+.todoItem{
+    letter-spacing: 0.6px;  
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}  
+ 
+.complete {
+    text-decoration: line-through;
+  }

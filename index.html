@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>  
+    <link rel="stylesheet" href="style.css">  
+    <link rel="shortcut icon" href="./todo favicon.avif" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Todo Application</h1>  
+
+        <input type="text" id="todoInput" placeholder="Enter next Todo here">   
+
+         
+        <button  id="addTodo">Add Todo <i class="fa-solid fa-plus"></i> </button>    
+        
+    
+        <!-- <button id="showTodobtn">Show Todo</button>   -->
+
+        <div>
+            <button class="filter-btn" data-filter="all" >All</button>
+            <button class="filter-btn" data-filter="completed" >Completed</button>
+            <button class="filter-btn" data-filter="pending" >Pending</button>    
+        </div>
+
+        <ul id="TodoList">   
+         
+        </ul>     
+    </div> 
+
+
+    <script src="script.js"></script> 
+    
+</body> 
+</html>
